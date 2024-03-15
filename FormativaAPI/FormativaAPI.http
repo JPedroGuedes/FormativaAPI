@@ -1,0 +1,6 @@
+@FormativaAPI_HostAddress = http://localhost:5097
+
+GET {{FormativaAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
