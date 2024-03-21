@@ -12,7 +12,8 @@ public class EditoraMap : IEntityTypeConfiguration<EditoraModel>
         builder.Property(x => x.Nome).IsRequired().HasMaxLength(255);
         builder.Property(x => x.Localizacao).IsRequired().HasMaxLength(255);
         builder.Property(x => x.AnoFundacao).IsRequired().HasMaxLength(255);
+        builder.Property(x => x.LivroId).IsRequired().HasMaxLength(255);
         
-        builder.HasMany(x => x.Livro);
+        builder.HasOne(x => x.Livro);
     }
 }

@@ -7,5 +7,6 @@ public class EditoraModel
     public string Localizacao { get; set; }
     public int AnoFundacao { get; set; }
     
-    public ICollection<LivroModel> Livro { get; set; }
+    public virtual LivroModel? Livro { get; set; }
+    public int? LivroId { get; set; }
 }
